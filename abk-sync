@@ -1,0 +1,7 @@
+FILE=/var/db/abk/git     
+if [ -f $FILE ]; then
+   mkdir -p /var/db/abk/sources
+   wget https://raw.githubusercontent.com/Eidwood/abk-repos/main/git /var/db/abk/
+else
+   echo "File $FILE does not exist."
+fi
